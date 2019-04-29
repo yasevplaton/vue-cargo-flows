@@ -1,22 +1,55 @@
 <template lang="pug">
-  #app
-    img(alt="Vue logo" src="./assets/logo.png")
-    p приветики, я твое первое приложение на Vue
+  #root
+    main-interface
+    app-map
 </template>
 
 <script>
 export default {
-  name: "app"
+  components: {
+    mainInterface: () => import("./components/mainInterface.vue"),
+    appMap: () => import("./components/appMap.vue")
+  }
 };
 </script>
 
 <style lang="scss">
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=cyrillic");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  overflow: hidden;
+  background: rgb(51, 50, 49);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: normal;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+#root {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 </style>
