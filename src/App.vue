@@ -1,5 +1,5 @@
 <template lang="pug">
-  #root
+  #rootc
     main-interface
     app-map
 </template>
@@ -7,8 +7,8 @@
 <script>
 export default {
   components: {
-    mainInterface: () => import("./components/mainInterface.vue"),
-    appMap: () => import("./components/appMap.vue")
+    mainInterface: () => import("@/main-interface/mainInterface.vue"),
+    appMap: () => import("@/map/appMap.vue")
   }
 };
 </script>

@@ -4,11 +4,14 @@
       .row.greeting-row
         .col-lg-12
           h5.title.title__main Hello! Welcome to the master of building cargo flow maps!
+      upload-data
 </template>
 
 <script>
 export default {
-  
+  components: {
+    uploadData: () => import("@/main-interface/uploadData.vue")
+  }
 };
 </script>
 
