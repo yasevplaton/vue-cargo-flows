@@ -15,6 +15,7 @@ export default {
 
 <style lang="scss">
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=cyrillic");
+@import url("https://use.fontawesome.com/releases/v5.7.2/css/all.css");
 
 body {
   margin: 0;
